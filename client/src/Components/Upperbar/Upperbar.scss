@@ -1,0 +1,43 @@
+.upperbar {
+  background-color: #1e1f29;
+  padding: 10px 0;
+  .upperbar-content {
+    ul {
+      margin-bottom: 0;
+      padding: 0;
+      display: flex;
+      justify-content: flex-start;
+      list-style: none;
+      li {
+        display: flex;
+        align-items: center;
+        margin-right: 30px;
+        &:last-child {
+          margin-right: 0;
+        }
+        a {
+          text-decoration: none;
+          i {
+            margin-right: 0;
+          }
+          span {
+            text-transform: capitalize;
+          }
+        }
+        i {
+          color: rgba(40, 167, 69, 1);
+          margin-right: 7px;
+        }
+        span {
+          font-size: 13px;
+          font-weight: 600;
+          color: #fff;
+          cursor: pointer;
+          &:hover {
+            color: rgba(40, 167, 69, 1);
+          }
+        }
+      }
+    }
+  }
+}

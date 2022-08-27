@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "category": "Headphones",
+    "imageUrl": "./images/category1.png"
+  },
+  {
+    "id": 2,
+    "category": "Watches",
+    "imageUrl": "./images/category2.png"
+  },
+  {
+    "id": 3,
+    "category": "Smartphones",
+    "imageUrl": "./images/category3.jpg"
+  }
+]

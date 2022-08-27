@@ -1,0 +1,99 @@
+.sellings {
+  margin-top: 50px;
+}
+.sellings .products-settings {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.sellings .products-settings h3 {
+  color: #2b2d42;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+}
+.sellings .products-settings ul {
+  list-style: none;
+  display: flex;
+}
+.sellings .products-settings ul li {
+  cursor: pointer;
+  margin-left: 25px;
+  color: #8d99ae;
+  font-weight: 500;
+}
+.sellings .products-settings ul li:first-child {
+  margin-left: 0;
+}
+.sellings .products-settings ul li::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: rgb(40, 167, 69);
+  transition: width 0.5s ease-in-out;
+}
+.sellings .products-settings ul li.active {
+  color: rgb(40, 167, 69);
+}
+.sellings .products-settings ul li.active::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(40, 167, 69);
+}
+.sellings .products-settings ul li:hover::after {
+  width: 100%;
+}
+.sellings .sellings-content {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 40px;
+}
+.sellings .sellings-content .selling-item {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+.sellings .sellings-content .selling-item img {
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+  object-fit: contain;
+}
+.sellings .sellings-content .selling-item .details .category {
+  margin-bottom: 5px;
+  padding: 0;
+  text-align: left;
+  color: #8d99ae;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.sellings .sellings-content .selling-item .details h6 {
+  font-size: 12px;
+  font-weight: bold;
+  color: #2b2d42;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.sellings .sellings-content .selling-item .details h6:hover {
+  color: #d10024;
+}
+.sellings .sellings-content .selling-item .details .prices {
+  display: flex;
+  align-items: center;
+}
+.sellings .sellings-content .selling-item .details .prices .new {
+  color: #d10024;
+  margin-right: 10px;
+  margin-bottom: 0;
+}
+.sellings .sellings-content .selling-item .details .prices span {
+  font-size: 11px;
+  font-weight: 700;
+  color: #8d99ae;
+  text-decoration: line-through;
+}

@@ -1,0 +1,76 @@
+.footer {
+  background: #15161d;
+  color: #b9babc;
+  padding: 50px 0;
+}
+.footer .footer-item h4 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+.footer .footer-item ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+.footer .footer-item ul li {
+  margin-bottom: 15px;
+}
+.footer .footer-item ul li:last-child {
+  margin-bottom: 0;
+}
+.footer .footer-item ul li span {
+  cursor: pointer;
+}
+.footer .footer-item ul li span:hover {
+  color: rgb(40, 167, 69);
+}
+.footer .footer-item:first-child p {
+  font-size: 14px;
+  width: 80%;
+}
+.footer .footer-item:first-child ul li {
+  display: flex;
+  align-items: center;
+}
+.footer .footer-item:first-child ul li i {
+  width: 18px;
+  margin-right: 10px;
+  font-size: 18px;
+  color: rgb(40, 167, 69);
+}
+
+.copyright {
+  background-color: #1e1f29;
+  padding: 50px 0 40px;
+}
+.copyright ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.copyright ul li {
+  cursor: pointer;
+  margin-right: 15px;
+}
+.copyright ul li:last-child {
+  margin-right: 0;
+}
+.copyright ul li i {
+  color: #15161d;
+  font-size: 36px;
+  display: block;
+}
+.copyright p {
+  color: #b9babc;
+  margin-bottom: 0;
+  margin-top: 50px;
+  font-size: 14px;
+}
+.copyright p span {
+  color: rgb(40, 167, 69);
+  cursor: pointer;
+}
