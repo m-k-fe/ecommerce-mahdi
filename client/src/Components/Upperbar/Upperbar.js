@@ -8,6 +8,8 @@ function Upperbar() {
   const navigate = useNavigate();
   const { _id } = useSelector((state) => state.auth);
   const { username } = useSelector((state) => state.auth);
+  const { loginStatus } = useSelector((state) => state.auth);
+  console.log(loginStatus);
   const handleLogOutUser = () => {
     dispatch(logOutUser());
     navigate("/register");
@@ -37,7 +39,7 @@ function Upperbar() {
           </div>
           <div className="col-lg-6">
             <ul className="justify-content-end">
-              {_id ? (
+              {_id && loginStatus === "Success" ? (
                 <>
                   <li>
                     <NavLink to="/profile">
@@ -64,16 +66,6 @@ function Upperbar() {
                   </li>
                 </>
               )}
-              {/* <li>
-                <NavLink to="/login">
-                  <i className="fa fa-sign-in"></i> <span>Login</span>
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to="/register">
-                  <i className="fa fa-user-plus"></i> <span>Register</span>
-                </NavLink>
-              </li> */}
             </ul>
           </div>
         </div>

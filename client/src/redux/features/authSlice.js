@@ -9,6 +9,7 @@ export const registerUser = createAsyncThunk(
       const token = await axios.post("http://localhost:5000/api/register", {
         username: user.username,
         email: user.email,
+        phone: user.phone,
         password: user.password,
       });
       localStorage.setItem("token", token.data);
@@ -38,6 +39,7 @@ const authSlice = createSlice({
     token: localStorage.getItem("token"),
     username: "",
     email: "",
+    phone: "",
     _id: "",
     registerStatus: "",
     registerError: "",
@@ -53,6 +55,7 @@ const authSlice = createSlice({
         state.token = token;
         state.username = user.username;
         state._id = user._id;
+        state.phone = user.phone;
         state.userLoaded = true;
       }
     },
@@ -61,6 +64,7 @@ const authSlice = createSlice({
       state.token = "";
       state.username = "";
       state.email = "";
+      state.phone = "";
       state._id = "";
       state.registerStatus = "";
       state.registerError = "";
@@ -77,6 +81,7 @@ const authSlice = createSlice({
       state.token = payload;
       state.username = user.username;
       state.email = user.email;
+      state.phone = user.phone;
       state._id = user._id;
       state.registerStatus = "Success";
     },

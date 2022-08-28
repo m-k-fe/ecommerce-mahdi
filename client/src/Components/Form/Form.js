@@ -17,6 +17,7 @@ function Form() {
       ? {
           username: "",
           email: "",
+          phone: "",
           password: "",
         }
       : {
@@ -54,12 +55,19 @@ function Form() {
               onChange={(e) => setUser({ ...user, username: e.target.value })}
             />
             {location.pathname === "/register" && (
-              <input
-                type="email"
-                value={user.email}
-                placeholder="Email..."
-                onChange={(e) => setUser({ ...user, email: e.target.value })}
-              />
+              <>
+                <input
+                  type="email"
+                  value={user.email}
+                  placeholder="Email..."
+                  onChange={(e) => setUser({ ...user, email: e.target.value })}
+                />
+                <input
+                  type="number"
+                  placeholder="Phone Number..."
+                  onChange={(e) => setUser({ ...user, phone: e.target.value })}
+                />
+              </>
             )}
             <input
               type="password"
